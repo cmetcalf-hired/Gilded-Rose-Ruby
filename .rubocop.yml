@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.2
+  TargetRubyVersion: 2.5
 
   Exclude:
     - "bin/**/*"
@@ -36,4 +36,8 @@ Style/ModuleFunction:
 
 # We are going to skip top-level class documentation for katas.
 Style/Documentation:
+  Enabled: false
+
+# Don't worry about frozen string literals for katas.
+Style/FrozenStringLiteralComment:
   Enabled: false
